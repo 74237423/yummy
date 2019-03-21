@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员注册</title>
+    <link rel="stylesheet" href="../../css/login/style.css" />
+</head>
+<body>
+<div class="register-container">
+    <h1>Yummy</h1>
+
+    <div class="connect">
+        <p>会员注册</p>
+    </div>
+
+    <form action="/memberRegister" method="post" id="registerForm">
+        <div>
+            <input type="text" name="username" class="username" placeholder="您的用户名" autocomplete="off"/>
+        </div>
+        <div>
+            <input type="password" name="password" class="password" placeholder="输入密码" oncontextmenu="return false" onpaste="return false" />
+        </div>
+
+        <div>
+            <input type="text" name="phone" class="phone_number" placeholder="输入手机号码" maxlength="11" oninput = "value=value.replace(/[^\d]/g,'')" autocomplete="off"/>
+        </div>
+        <div>
+            <input type="email" name="email" class="email" placeholder="输入邮箱地址" oncontextmenu="return false" onpaste="return false" />
+        </div>
+        <div>
+            <input type="text" name="address" class="email" placeholder="输入收货地址" oncontextmenu="return false" onpaste="return false" />
+        </div>
+
+        <button id="submit" type="submit">注 册</button>
+    </form>
+    <a href="/memberLogin">
+        <button type="button" class="register-tis">已经有账号？</button>
+    </a>
+
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/common.js"></script>
+</body>
+</html>

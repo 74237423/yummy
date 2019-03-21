@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.Modifyres" table="modifyres" schema="yummy">
+        <id name="id" column="id"/>
+        <property name="resid" column="resid"/>
+        <property name="datetime" column="datetime"/>
+        <property name="typebefore" column="typebefore"/>
+        <property name="typeafter" column="typeafter"/>
+        <property name="desbefore" column="desbefore"/>
+        <property name="desafter" column="desafter"/>
+        <property name="ischeck" column="ischeck"/>
+        <property name="aggree" column="aggree"/>
+    </class>
+</hibernate-mapping>

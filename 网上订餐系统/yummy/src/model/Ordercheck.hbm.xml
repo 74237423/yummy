@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.Ordercheck" table="ordercheck" schema="yummy">
+        <id name="orderid" column="orderid"/>
+        <property name="memberemail" column="memberemail"/>
+        <property name="restauranrid" column="restauranrid"/>
+        <property name="totalprice" column="totalprice"/>
+        <property name="paid" column="paid"/>
+        <property name="sent" column="sent"/>
+        <property name="arrived" column="arrived"/>
+        <property name="askReturn" column="askReturn"/>
+        <property name="returned" column="returned"/>
+        <property name="balance" column="balance"/>
+        <property name="earn" column="earn"/>
+        <property name="datetime" column="datetime"/>
+        <property name="desideRerutn" column="desideRerutn"/>
+        <property name="sendtime" column="sendtime"/>
+    </class>
+</hibernate-mapping>

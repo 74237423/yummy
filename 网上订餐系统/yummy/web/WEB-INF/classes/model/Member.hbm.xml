@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.Member" table="member" schema="yummy">
+        <id name="email" column="email"/>
+        <property name="phone" column="phone"/>
+        <property name="name" column="name"/>
+        <property name="money" column="money"/>
+        <property name="address" column="address"/>
+        <property name="viplevel" column="viplevel"/>
+        <property name="total" column="total"/>
+        <property name="logoff" column="logoff"/>
+        <property name="password" column="password"/>
+        <property name="actived" column="actived"/>
+        <property name="code" column="code"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/yummy?useUnicode=true&amp;characterEncoding=UTF-8</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">161250049</property>
+    <property name="current_session_context_class">thread</property>
+      <property name="show_sql">true</property>
+    <property name="hbm2ddl.auto">update</property>
+    <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+      <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+      <mapping resource="model/Food.hbm.xml"/>
+      <mapping class="model.Food"/>
+      <mapping class="model.Orderdetail"/>
+      <mapping resource="model/Ordercheck.hbm.xml"/>
+      <mapping class="model.Ordercheck"/>
+      <mapping class="model.Restaurant"/>
+      <mapping resource="model/Restaurant.hbm.xml"/>
+      <mapping class="model.Admin"/>
+      <mapping resource="model/Admin.hbm.xml"/>
+      <mapping class="model.Modifyres"/>
+      <mapping resource="model/Modifyres.hbm.xml"/>
+      <mapping class="model.Member"/>
+      <mapping resource="model/Member.hbm.xml"/>
+    <mapping resource="model/Orderdetail.hbm.xml"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
